@@ -4,7 +4,7 @@
  <img src="/screenshots/logo.png" align="center"  />
 </p>
 
-Fom is a time management application based on the Pomodoro technique. It is free and open-source, and you are welcome to modify it as long as you credit me.
+Fom is a time management application based on the Pomodoro technique. You can focus on your work for 25 minutes, followed by a 5-minute break. It is free and open-source, and you’re welcome to modify it as long as you give me credit.
 
 ## Support
 Using this app is free but if you enjoy using it, you can support me :)
