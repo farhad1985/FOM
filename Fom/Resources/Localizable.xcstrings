@@ -1,0 +1,81 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "25_mins_over" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "25 mins is over"
+          }
+        }
+      }
+    },
+    "drink" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Go drink some water!"
+          }
+        }
+      }
+    },
+    "Exit" : {
+
+    },
+    "look_far_away" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Look at something far away for 30 seconds"
+          }
+        }
+      }
+    },
+    "meditation" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meditate for 30 seconds"
+          }
+        }
+      }
+    },
+    "music" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Listen to lofi girl :D"
+          }
+        }
+      }
+    },
+    "Restart Focus" : {
+
+    },
+    "Start Focus" : {
+
+    },
+    "walk" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stand up and walk around"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

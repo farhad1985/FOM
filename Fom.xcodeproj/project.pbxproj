@@ -1,0 +1,871 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F200EAB62C8DC7DD00B7BEF4 /* TimerServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200EAB52C8DC7DD00B7BEF4 /* TimerServiceTests.swift */; };
+		F200EAB82C8DDB7D00B7BEF4 /* TimerFom.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200EAB72C8DDB7D00B7BEF4 /* TimerFom.swift */; };
+		F200EABA2C8DDFD200B7BEF4 /* TimerFomMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200EAB92C8DDFD200B7BEF4 /* TimerFomMock.swift */; };
+		F200EABE2C8E201700B7BEF4 /* TimerStreamServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200EABD2C8E201700B7BEF4 /* TimerStreamServiceMock.swift */; };
+		F200EAC12C8E218100B7BEF4 /* NotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200EAC02C8E218100B7BEF4 /* NotificationTests.swift */; };
+		F200EAC42C8E21B400B7BEF4 /* UNUserNotificationCenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200EAC32C8E21B400B7BEF4 /* UNUserNotificationCenterMock.swift */; };
+		F200EAC62C8E27C400B7BEF4 /* FomNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200EAC52C8E27C400B7BEF4 /* FomNotificationCenter.swift */; };
+		F23C71DD2C80F4B20062BC4D /* sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F23C71DC2C80F4B20062BC4D /* sound.mp3 */; };
+		F23C71DF2C80F4BC0062BC4D /* SoundService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23C71DE2C80F4BC0062BC4D /* SoundService.swift */; };
+		F23E72192C8C6DEF007AD37E /* SoundPlayerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23E72182C8C6DEF007AD37E /* SoundPlayerMock.swift */; };
+		F23E721B2C8C7271007AD37E /* SoundPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23E721A2C8C7271007AD37E /* SoundPlayerTests.swift */; };
+		F23E721F2C8C86B7007AD37E /* TimerStreamService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23E721E2C8C86B7007AD37E /* TimerStreamService.swift */; };
+		F23E72212C8C9874007AD37E /* TimeConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23E72202C8C9874007AD37E /* TimeConfig.swift */; };
+		F23E72232C8C9D02007AD37E /* TimerElapsed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23E72222C8C9D02007AD37E /* TimerElapsed.swift */; };
+		F23E72262C8C9E5B007AD37E /* TimerElapsedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23E72252C8C9E5B007AD37E /* TimerElapsedTests.swift */; };
+		F26B84592C7FACFF00D80BC4 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26B84582C7FACFF00D80BC4 /* NotificationManager.swift */; };
+		F26B845C2C7FB67F00D80BC4 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F26B845B2C7FB67F00D80BC4 /* Localizable.xcstrings */; };
+		F2901ADB2C958EEC00373AF9 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F2901ADA2C958EEC00373AF9 /* FirebaseAnalytics */; };
+		F2901ADD2C958EEC00373AF9 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = F2901ADC2C958EEC00373AF9 /* FirebaseRemoteConfig */; };
+		F2901ADF2C95912A00373AF9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2901ADE2C9590F900373AF9 /* GoogleService-Info.plist */; };
+		F2901AE32C9598D400373AF9 /* FomAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2901AE22C9598D400373AF9 /* FomAnalytics.swift */; };
+		F2901AE62C95999F00373AF9 /* FomEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2901AE52C95999E00373AF9 /* FomEventType.swift */; };
+		F2901AE92C959DB200373AF9 /* MenuActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2901AE82C959DB200373AF9 /* MenuActionView.swift */; };
+		F2901AEC2C95A11100373AF9 /* TimerStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2901AEB2C95A11100373AF9 /* TimerStatusViewModel.swift */; };
+		F2901AEE2C95C8FE00373AF9 /* TimerStatusMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2901AED2C95C8FE00373AF9 /* TimerStatusMapper.swift */; };
+		F2901AF02C96ED5300373AF9 /* TimerStatusMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2901AEF2C96ED5300373AF9 /* TimerStatusMapperTests.swift */; };
+		F2901AF22C96F30C00373AF9 /* TimerFomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2901AF12C96F30C00373AF9 /* TimerFomTests.swift */; };
+		F2C3B9EB2C8C6A64005517B7 /* SoundConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C3B9EA2C8C6A64005517B7 /* SoundConfig.swift */; };
+		F2C3B9EE2C8C6AF4005517B7 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C3B9ED2C8C6AF4005517B7 /* SoundPlayer.swift */; };
+		F2DDDD9C2C7D0F7100A55D56 /* FomApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DDDD9B2C7D0F7100A55D56 /* FomApp.swift */; };
+		F2DDDD9E2C7D0F7100A55D56 /* TimerStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DDDD9D2C7D0F7100A55D56 /* TimerStatusView.swift */; };
+		F2DDDDA02C7D0F7200A55D56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2DDDD9F2C7D0F7200A55D56 /* Assets.xcassets */; };
+		F2DDDDA32C7D0F7200A55D56 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2DDDDA22C7D0F7200A55D56 /* Preview Assets.xcassets */; };
+		F2DDDDAE2C7D0F7200A55D56 /* SoundServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DDDDAD2C7D0F7200A55D56 /* SoundServiceTests.swift */; };
+		F2DDDDB82C7D0F7200A55D56 /* FomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DDDDB72C7D0F7200A55D56 /* FomUITests.swift */; };
+		F2DDDDBA2C7D0F7200A55D56 /* FomUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DDDDB92C7D0F7200A55D56 /* FomUITestsLaunchTests.swift */; };
+		F2DDDDC72C7D209000A55D56 /* TimerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DDDDC62C7D209000A55D56 /* TimerService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2DDDDAA2C7D0F7200A55D56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2DDDD902C7D0F7100A55D56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2DDDD972C7D0F7100A55D56;
+			remoteInfo = Fom;
+		};
+		F2DDDDB42C7D0F7200A55D56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2DDDD902C7D0F7100A55D56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2DDDD972C7D0F7100A55D56;
+			remoteInfo = Fom;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F200EAB52C8DC7DD00B7BEF4 /* TimerServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerServiceTests.swift; sourceTree = "<group>"; };
+		F200EAB72C8DDB7D00B7BEF4 /* TimerFom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerFom.swift; sourceTree = "<group>"; };
+		F200EAB92C8DDFD200B7BEF4 /* TimerFomMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerFomMock.swift; sourceTree = "<group>"; };
+		F200EABD2C8E201700B7BEF4 /* TimerStreamServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerStreamServiceMock.swift; sourceTree = "<group>"; };
+		F200EAC02C8E218100B7BEF4 /* NotificationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTests.swift; sourceTree = "<group>"; };
+		F200EAC32C8E21B400B7BEF4 /* UNUserNotificationCenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNUserNotificationCenterMock.swift; sourceTree = "<group>"; };
+		F200EAC52C8E27C400B7BEF4 /* FomNotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FomNotificationCenter.swift; sourceTree = "<group>"; };
+		F23C71DC2C80F4B20062BC4D /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
+		F23C71DE2C80F4BC0062BC4D /* SoundService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundService.swift; sourceTree = "<group>"; };
+		F23C71E02C80FA0B0062BC4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F23E72182C8C6DEF007AD37E /* SoundPlayerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayerMock.swift; sourceTree = "<group>"; };
+		F23E721A2C8C7271007AD37E /* SoundPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayerTests.swift; sourceTree = "<group>"; };
+		F23E721E2C8C86B7007AD37E /* TimerStreamService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerStreamService.swift; sourceTree = "<group>"; };
+		F23E72202C8C9874007AD37E /* TimeConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeConfig.swift; sourceTree = "<group>"; };
+		F23E72222C8C9D02007AD37E /* TimerElapsed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerElapsed.swift; sourceTree = "<group>"; };
+		F23E72252C8C9E5B007AD37E /* TimerElapsedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerElapsedTests.swift; sourceTree = "<group>"; };
+		F26B84582C7FACFF00D80BC4 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		F26B845B2C7FB67F00D80BC4 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		F2901ADE2C9590F900373AF9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F2901AE22C9598D400373AF9 /* FomAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FomAnalytics.swift; sourceTree = "<group>"; };
+		F2901AE52C95999E00373AF9 /* FomEventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FomEventType.swift; sourceTree = "<group>"; };
+		F2901AE82C959DB200373AF9 /* MenuActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuActionView.swift; sourceTree = "<group>"; };
+		F2901AEB2C95A11100373AF9 /* TimerStatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerStatusViewModel.swift; sourceTree = "<group>"; };
+		F2901AED2C95C8FE00373AF9 /* TimerStatusMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerStatusMapper.swift; sourceTree = "<group>"; };
+		F2901AEF2C96ED5300373AF9 /* TimerStatusMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerStatusMapperTests.swift; sourceTree = "<group>"; };
+		F2901AF12C96F30C00373AF9 /* TimerFomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerFomTests.swift; sourceTree = "<group>"; };
+		F2C3B9EA2C8C6A64005517B7 /* SoundConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundConfig.swift; sourceTree = "<group>"; };
+		F2C3B9ED2C8C6AF4005517B7 /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		F2DDDD982C7D0F7100A55D56 /* Fom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2DDDD9B2C7D0F7100A55D56 /* FomApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FomApp.swift; sourceTree = "<group>"; };
+		F2DDDD9D2C7D0F7100A55D56 /* TimerStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerStatusView.swift; sourceTree = "<group>"; };
+		F2DDDD9F2C7D0F7200A55D56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2DDDDA22C7D0F7200A55D56 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F2DDDDA42C7D0F7200A55D56 /* Fom.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fom.entitlements; sourceTree = "<group>"; };
+		F2DDDDA92C7D0F7200A55D56 /* FomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2DDDDAD2C7D0F7200A55D56 /* SoundServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundServiceTests.swift; sourceTree = "<group>"; };
+		F2DDDDB32C7D0F7200A55D56 /* FomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2DDDDB72C7D0F7200A55D56 /* FomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FomUITests.swift; sourceTree = "<group>"; };
+		F2DDDDB92C7D0F7200A55D56 /* FomUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FomUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F2DDDDC62C7D209000A55D56 /* TimerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2DDDD952C7D0F7100A55D56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2901ADB2C958EEC00373AF9 /* FirebaseAnalytics in Frameworks */,
+				F2901ADD2C958EEC00373AF9 /* FirebaseRemoteConfig in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2DDDDA62C7D0F7200A55D56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2DDDDB02C7D0F7200A55D56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F200EABB2C8DDFD600B7BEF4 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				F200EAB92C8DDFD200B7BEF4 /* TimerFomMock.swift */,
+				F200EABD2C8E201700B7BEF4 /* TimerStreamServiceMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		F200EABC2C8E1FEB00B7BEF4 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				F26B84582C7FACFF00D80BC4 /* NotificationManager.swift */,
+				F200EAC52C8E27C400B7BEF4 /* FomNotificationCenter.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		F200EABF2C8E203900B7BEF4 /* NotificationTests */ = {
+			isa = PBXGroup;
+			children = (
+				F200EAC22C8E219F00B7BEF4 /* Mock */,
+				F200EAC02C8E218100B7BEF4 /* NotificationTests.swift */,
+			);
+			path = NotificationTests;
+			sourceTree = "<group>";
+		};
+		F200EAC22C8E219F00B7BEF4 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				F200EAC32C8E21B400B7BEF4 /* UNUserNotificationCenterMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		F23E72172C8C6DE4007AD37E /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				F23E72182C8C6DEF007AD37E /* SoundPlayerMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		F23E721C2C8C74AD007AD37E /* SoundTests */ = {
+			isa = PBXGroup;
+			children = (
+				F23E721A2C8C7271007AD37E /* SoundPlayerTests.swift */,
+				F2DDDDAD2C7D0F7200A55D56 /* SoundServiceTests.swift */,
+				F23E72172C8C6DE4007AD37E /* Mock */,
+			);
+			path = SoundTests;
+			sourceTree = "<group>";
+		};
+		F23E721D2C8C8693007AD37E /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				F2F26B612C8E2BD4007BFCC9 /* Model */,
+				F2DDDDC62C7D209000A55D56 /* TimerService.swift */,
+				F200EAB72C8DDB7D00B7BEF4 /* TimerFom.swift */,
+				F23E721E2C8C86B7007AD37E /* TimerStreamService.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		F23E72242C8C9E30007AD37E /* TimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F200EABB2C8DDFD600B7BEF4 /* Mock */,
+				F23E72252C8C9E5B007AD37E /* TimerElapsedTests.swift */,
+				F200EAB52C8DC7DD00B7BEF4 /* TimerServiceTests.swift */,
+				F2901AF12C96F30C00373AF9 /* TimerFomTests.swift */,
+				F2901AEF2C96ED5300373AF9 /* TimerStatusMapperTests.swift */,
+			);
+			path = TimerTests;
+			sourceTree = "<group>";
+		};
+		F26CB16E2C832A3F0075194B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F2901AE42C95998700373AF9 /* Analytics */,
+				F200EABC2C8E1FEB00B7BEF4 /* Notification */,
+				F23E721D2C8C8693007AD37E /* Timer */,
+				F2C3B9EC2C8C6AE1005517B7 /* Sound */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F26CB16F2C832A510075194B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F23C71DC2C80F4B20062BC4D /* sound.mp3 */,
+				F26B845B2C7FB67F00D80BC4 /* Localizable.xcstrings */,
+				F2DDDD9F2C7D0F7200A55D56 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F26CB1702C832A9E0075194B /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				F2901AE72C959C2A00373AF9 /* Timer Status */,
+				F2901AEA2C95A0F500373AF9 /* Menu Action */,
+				F2DDDD9B2C7D0F7100A55D56 /* FomApp.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		F2901AE42C95998700373AF9 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				F2901AE22C9598D400373AF9 /* FomAnalytics.swift */,
+				F2901AE52C95999E00373AF9 /* FomEventType.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		F2901AE72C959C2A00373AF9 /* Timer Status */ = {
+			isa = PBXGroup;
+			children = (
+				F2DDDD9D2C7D0F7100A55D56 /* TimerStatusView.swift */,
+				F2901AEB2C95A11100373AF9 /* TimerStatusViewModel.swift */,
+				F2901AED2C95C8FE00373AF9 /* TimerStatusMapper.swift */,
+			);
+			path = "Timer Status";
+			sourceTree = "<group>";
+		};
+		F2901AEA2C95A0F500373AF9 /* Menu Action */ = {
+			isa = PBXGroup;
+			children = (
+				F2901AE82C959DB200373AF9 /* MenuActionView.swift */,
+			);
+			path = "Menu Action";
+			sourceTree = "<group>";
+		};
+		F2C3B9EC2C8C6AE1005517B7 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				F2C3B9EA2C8C6A64005517B7 /* SoundConfig.swift */,
+				F23C71DE2C80F4BC0062BC4D /* SoundService.swift */,
+				F2C3B9ED2C8C6AF4005517B7 /* SoundPlayer.swift */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		F2DDDD8F2C7D0F7100A55D56 = {
+			isa = PBXGroup;
+			children = (
+				F2DDDD9A2C7D0F7100A55D56 /* Fom */,
+				F2DDDDAC2C7D0F7200A55D56 /* FomTests */,
+				F2DDDDB62C7D0F7200A55D56 /* FomUITests */,
+				F2DDDD992C7D0F7100A55D56 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2DDDD992C7D0F7100A55D56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2DDDD982C7D0F7100A55D56 /* Fom.app */,
+				F2DDDDA92C7D0F7200A55D56 /* FomTests.xctest */,
+				F2DDDDB32C7D0F7200A55D56 /* FomUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2DDDD9A2C7D0F7100A55D56 /* Fom */ = {
+			isa = PBXGroup;
+			children = (
+				F26CB1702C832A9E0075194B /* Screen */,
+				F26CB16E2C832A3F0075194B /* Services */,
+				F26CB16F2C832A510075194B /* Resources */,
+				F23C71E02C80FA0B0062BC4D /* Info.plist */,
+				F2901ADE2C9590F900373AF9 /* GoogleService-Info.plist */,
+				F2DDDDA42C7D0F7200A55D56 /* Fom.entitlements */,
+				F2DDDDA12C7D0F7200A55D56 /* Preview Content */,
+			);
+			path = Fom;
+			sourceTree = "<group>";
+		};
+		F2DDDDA12C7D0F7200A55D56 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F2DDDDA22C7D0F7200A55D56 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F2DDDDAC2C7D0F7200A55D56 /* FomTests */ = {
+			isa = PBXGroup;
+			children = (
+				F200EABF2C8E203900B7BEF4 /* NotificationTests */,
+				F23E72242C8C9E30007AD37E /* TimerTests */,
+				F23E721C2C8C74AD007AD37E /* SoundTests */,
+			);
+			path = FomTests;
+			sourceTree = "<group>";
+		};
+		F2DDDDB62C7D0F7200A55D56 /* FomUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F2DDDDB72C7D0F7200A55D56 /* FomUITests.swift */,
+				F2DDDDB92C7D0F7200A55D56 /* FomUITestsLaunchTests.swift */,
+			);
+			path = FomUITests;
+			sourceTree = "<group>";
+		};
+		F2F26B612C8E2BD4007BFCC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F23E72222C8C9D02007AD37E /* TimerElapsed.swift */,
+				F23E72202C8C9874007AD37E /* TimeConfig.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2DDDD972C7D0F7100A55D56 /* Fom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2DDDDBD2C7D0F7200A55D56 /* Build configuration list for PBXNativeTarget "Fom" */;
+			buildPhases = (
+				F2DDDD942C7D0F7100A55D56 /* Sources */,
+				F2DDDD952C7D0F7100A55D56 /* Frameworks */,
+				F2DDDD962C7D0F7100A55D56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fom;
+			packageProductDependencies = (
+				F2901ADA2C958EEC00373AF9 /* FirebaseAnalytics */,
+				F2901ADC2C958EEC00373AF9 /* FirebaseRemoteConfig */,
+			);
+			productName = Fom;
+			productReference = F2DDDD982C7D0F7100A55D56 /* Fom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2DDDDA82C7D0F7200A55D56 /* FomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2DDDDC02C7D0F7200A55D56 /* Build configuration list for PBXNativeTarget "FomTests" */;
+			buildPhases = (
+				F2DDDDA52C7D0F7200A55D56 /* Sources */,
+				F2DDDDA62C7D0F7200A55D56 /* Frameworks */,
+				F2DDDDA72C7D0F7200A55D56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2DDDDAB2C7D0F7200A55D56 /* PBXTargetDependency */,
+			);
+			name = FomTests;
+			productName = FomTests;
+			productReference = F2DDDDA92C7D0F7200A55D56 /* FomTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F2DDDDB22C7D0F7200A55D56 /* FomUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2DDDDC32C7D0F7200A55D56 /* Build configuration list for PBXNativeTarget "FomUITests" */;
+			buildPhases = (
+				F2DDDDAF2C7D0F7200A55D56 /* Sources */,
+				F2DDDDB02C7D0F7200A55D56 /* Frameworks */,
+				F2DDDDB12C7D0F7200A55D56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2DDDDB52C7D0F7200A55D56 /* PBXTargetDependency */,
+			);
+			name = FomUITests;
+			productName = FomUITests;
+			productReference = F2DDDDB32C7D0F7200A55D56 /* FomUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2DDDD902C7D0F7100A55D56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					F2DDDD972C7D0F7100A55D56 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					F2DDDDA82C7D0F7200A55D56 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = F2DDDD972C7D0F7100A55D56;
+					};
+					F2DDDDB22C7D0F7200A55D56 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = F2DDDD972C7D0F7100A55D56;
+					};
+				};
+			};
+			buildConfigurationList = F2DDDD932C7D0F7100A55D56 /* Build configuration list for PBXProject "Fom" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2DDDD8F2C7D0F7100A55D56;
+			packageReferences = (
+				F2901AD92C958EEB00373AF9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = F2DDDD992C7D0F7100A55D56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2DDDD972C7D0F7100A55D56 /* Fom */,
+				F2DDDDA82C7D0F7200A55D56 /* FomTests */,
+				F2DDDDB22C7D0F7200A55D56 /* FomUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2DDDD962C7D0F7100A55D56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F23C71DD2C80F4B20062BC4D /* sound.mp3 in Resources */,
+				F2DDDDA32C7D0F7200A55D56 /* Preview Assets.xcassets in Resources */,
+				F2901ADF2C95912A00373AF9 /* GoogleService-Info.plist in Resources */,
+				F26B845C2C7FB67F00D80BC4 /* Localizable.xcstrings in Resources */,
+				F2DDDDA02C7D0F7200A55D56 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2DDDDA72C7D0F7200A55D56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2DDDDB12C7D0F7200A55D56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2DDDD942C7D0F7100A55D56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2DDDDC72C7D209000A55D56 /* TimerService.swift in Sources */,
+				F200EAC62C8E27C400B7BEF4 /* FomNotificationCenter.swift in Sources */,
+				F2901AE32C9598D400373AF9 /* FomAnalytics.swift in Sources */,
+				F200EAB82C8DDB7D00B7BEF4 /* TimerFom.swift in Sources */,
+				F23E721F2C8C86B7007AD37E /* TimerStreamService.swift in Sources */,
+				F2C3B9EE2C8C6AF4005517B7 /* SoundPlayer.swift in Sources */,
+				F2901AEC2C95A11100373AF9 /* TimerStatusViewModel.swift in Sources */,
+				F23C71DF2C80F4BC0062BC4D /* SoundService.swift in Sources */,
+				F2DDDD9E2C7D0F7100A55D56 /* TimerStatusView.swift in Sources */,
+				F26B84592C7FACFF00D80BC4 /* NotificationManager.swift in Sources */,
+				F2901AE62C95999F00373AF9 /* FomEventType.swift in Sources */,
+				F2DDDD9C2C7D0F7100A55D56 /* FomApp.swift in Sources */,
+				F2901AE92C959DB200373AF9 /* MenuActionView.swift in Sources */,
+				F23E72212C8C9874007AD37E /* TimeConfig.swift in Sources */,
+				F23E72232C8C9D02007AD37E /* TimerElapsed.swift in Sources */,
+				F2C3B9EB2C8C6A64005517B7 /* SoundConfig.swift in Sources */,
+				F2901AEE2C95C8FE00373AF9 /* TimerStatusMapper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2DDDDA52C7D0F7200A55D56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F200EABA2C8DDFD200B7BEF4 /* TimerFomMock.swift in Sources */,
+				F23E72262C8C9E5B007AD37E /* TimerElapsedTests.swift in Sources */,
+				F200EAB62C8DC7DD00B7BEF4 /* TimerServiceTests.swift in Sources */,
+				F23E72192C8C6DEF007AD37E /* SoundPlayerMock.swift in Sources */,
+				F200EAC12C8E218100B7BEF4 /* NotificationTests.swift in Sources */,
+				F200EAC42C8E21B400B7BEF4 /* UNUserNotificationCenterMock.swift in Sources */,
+				F2DDDDAE2C7D0F7200A55D56 /* SoundServiceTests.swift in Sources */,
+				F2901AF22C96F30C00373AF9 /* TimerFomTests.swift in Sources */,
+				F200EABE2C8E201700B7BEF4 /* TimerStreamServiceMock.swift in Sources */,
+				F2901AF02C96ED5300373AF9 /* TimerStatusMapperTests.swift in Sources */,
+				F23E721B2C8C7271007AD37E /* SoundPlayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2DDDDAF2C7D0F7200A55D56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2DDDDB82C7D0F7200A55D56 /* FomUITests.swift in Sources */,
+				F2DDDDBA2C7D0F7200A55D56 /* FomUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2DDDDAB2C7D0F7200A55D56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2DDDD972C7D0F7100A55D56 /* Fom */;
+			targetProxy = F2DDDDAA2C7D0F7200A55D56 /* PBXContainerItemProxy */;
+		};
+		F2DDDDB52C7D0F7200A55D56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2DDDD972C7D0F7100A55D56 /* Fom */;
+			targetProxy = F2DDDDB42C7D0F7200A55D56 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F2DDDDBB2C7D0F7200A55D56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F2DDDDBC2C7D0F7200A55D56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		F2DDDDBE2C7D0F7200A55D56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				ASSETCATALOG_COMPILER_STANDALONE_ICON_BEHAVIOR = default;
+				CODE_SIGN_ENTITLEMENTS = Fom/Fom.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "Fom/Preview\\ Content";
+				DEVELOPMENT_TEAM = K3Q5VWZ2VG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Fom/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.farhad.Fom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F2DDDDBF2C7D0F7200A55D56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				ASSETCATALOG_COMPILER_STANDALONE_ICON_BEHAVIOR = default;
+				CODE_SIGN_ENTITLEMENTS = Fom/Fom.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "Fom/Preview\\ Content";
+				DEVELOPMENT_TEAM = K3Q5VWZ2VG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Fom/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.farhad.Fom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F2DDDDC12C7D0F7200A55D56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.farhad.FomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fom.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fom";
+			};
+			name = Debug;
+		};
+		F2DDDDC22C7D0F7200A55D56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.farhad.FomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fom.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fom";
+			};
+			name = Release;
+		};
+		F2DDDDC42C7D0F7200A55D56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.farhad.FomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Fom;
+			};
+			name = Debug;
+		};
+		F2DDDDC52C7D0F7200A55D56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.farhad.FomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Fom;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2DDDD932C7D0F7100A55D56 /* Build configuration list for PBXProject "Fom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2DDDDBB2C7D0F7200A55D56 /* Debug */,
+				F2DDDDBC2C7D0F7200A55D56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2DDDDBD2C7D0F7200A55D56 /* Build configuration list for PBXNativeTarget "Fom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2DDDDBE2C7D0F7200A55D56 /* Debug */,
+				F2DDDDBF2C7D0F7200A55D56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2DDDDC02C7D0F7200A55D56 /* Build configuration list for PBXNativeTarget "FomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2DDDDC12C7D0F7200A55D56 /* Debug */,
+				F2DDDDC22C7D0F7200A55D56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2DDDDC32C7D0F7200A55D56 /* Build configuration list for PBXNativeTarget "FomUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2DDDDC42C7D0F7200A55D56 /* Debug */,
+				F2DDDDC52C7D0F7200A55D56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F2901AD92C958EEB00373AF9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F2901ADA2C958EEC00373AF9 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F2901AD92C958EEB00373AF9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		F2901ADC2C958EEC00373AF9 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F2901AD92C958EEB00373AF9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F2DDDD902C7D0F7100A55D56 /* Project object */;
+}
